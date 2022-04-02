@@ -1,0 +1,159 @@
+Барања:
+4.	Откако ќе го креирате репозиториумот, клонирајте го на вашиот компјутер. По клонирање на репозиториумот, влезете во истиот со цел да можете да ги извршувате следните задачи.
+git clone https://github.com/Kristijan34/SI_2022_lab1_153071.git  SI_2022_lab1_153071 
+со командата git clone го клонирам мојот репозиториум и ми креира фолдер именуван SI_2022_lab1_153071 и ја клонира во него.
+
+
+5.	Во локалниот репозиториум додадете текстуална датотека shopping_list.txt. Додадете во датотеката 5 случајни производи (секој во нов ред) и направете commit со порака “Add 5 items to the shopping list”.
+git add shopping_list.txt
+git commit -m “Add 5 items to the shopping list ”
+Со помош на командата git add . го додаваме новокреираниот txt фајл, а со командата git commit -m “ ” ја пишуваме пораката. 
+
+6.	На секоја од 5те претходни ставки, додадете им количина (во следниот формат. bread x 2). Направете commit со порака “Add quantities to the items.”
+Ги повторуваме истите команди како од 5тиот чекор само што овој пат пораката ќе биде различна. 
+
+7.	Креирајте 2 гранки: branch1 и branch2.
+Git branch branch1 
+Git branch branch2
+
+8.	Внесете ги досегашните логови во документацијата.
+Date:   Sat Apr 2 21:00:46 2022 +0200
+
+    Add quantities to the items
+
+commit 7e54cbf3f1ab6449e8db9cb59eb19de9fce1a44f
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.
+Date:   Sat Apr 2 21:00:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c414adcba9cf2ab0830234c39429010988532a0f (origin/
+Author: KristijanL <52075405+Kristijan34@users.noreply.g
+github.com>
+Date:   Sat Apr 2 21:00:46 2022 +0200
+
+    Add quantities to the items
+
+commit 7e54cbf3f1ab6449e8db9cb59eb19de9fce1a44f
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 21:00:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c414adcba9cf2ab0830234c39429010988532a0f (origin/master, origin/HEAD)
+Author: KristijanL <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 20:35:25 2022 +0200
+
+    Initial commit
+
+9.	Синхронизирајте ги сите гранки со оддалечениот репозиториум.
+git push 
+
+10.	Префрлете се на гранката branch1.
+git checkout branch1
+Со помош на командата checkout се префрлуваме на branch1.
+
+11.	Сменете ја количината на петтата ставка во shopping_list.txt и направете commit со порака “Change quantity of item #5”.
+git add shopping_list.txt 
+git commit -m “Change quantity of item #5”
+Со првата команда го додаваме а со другата правиме комит со порака. 
+
+12.	Вратете се на гранката master.
+git checkout master
+Со помош на командата checkout се префрлуваме на гранката мастер 
+
+13.	Сменете ја количината на втората ставка во shopping_list.txt и направете commit со порака “Change quantity of item #2”.
+git add shopping_list.txt 
+git commit -m “Change quantity of item #2”
+Се користат истите команди како од чекор 11.
+14.	Синхронизирајте ги сите гранки со оддалечениот репозиториум
+git push 
+15.	Префрлете се на гранката branch2.
+git checkout branch2 
+
+16.	Променете го името на ставката бр. 4 во листата и направете commit со порака “Modify item #4”.
+git add shopping_list.txt
+git commit -m “Modify item #4” 
+
+
+
+
+
+17.	Внесете ги досегашните логови во документацијата.
+$ git log
+commit ea317fe76ca7bd5d02fa8cd8709db58dcf7fad9d (HEAD -> branch2)
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 21:07:56 2022 +0200
+
+    Modify item #4
+
+commit 6d9b37b35ada9dba6eda024dce51ff3be7e7a697
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 21:00:46 2022 +0200
+
+    Add quantities to the items
+
+commit 7e54cbf3f1ab6449e8db9cb59eb19de9fce1a44f
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 21:00:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c414adcba9cf2ab0830234c39429010988532a0f
+Author: KristijanL <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 20:35:25 2022 +0200
+
+    Initial commit
+
+
+
+18.	Додадете 6та ставка во shopping_list.txt со промена на последниот commit. Сега пораката треба да гласи “Modify item #4 and add item #6”.
+git add shopping_list.txt
+git commit --amend -m "Modify item #4 and add item #6"
+Со помош на командата git commit --amend -m ја променуваме последната порака што сме ја направиле со новата. 
+
+19.	Внесете ги досегашните логови во документацијата.
+$ git log
+commit f71b884087c8bb4c9779b88562bb707b2f7e3399 (HEAD -> branch2)
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 21:07:56 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 6d9b37b35ada9dba6eda024dce51ff3be7e7a697
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 21:00:46 2022 +0200
+
+    Add quantities to the items
+
+commit 7e54cbf3f1ab6449e8db9cb59eb19de9fce1a44f
+Author: Kristijan34 <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 21:00:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c414adcba9cf2ab0830234c39429010988532a0f
+Author: KristijanL <52075405+Kristijan34@users.noreply.github.com>
+Date:   Sat Apr 2 20:35:25 2022 +0200
+
+    Initial commit
+
+20.	Префрлете се на гранката master и спојте ја гранката branch1 кон master.
+git checkout master 
+git push --set-upstream origin branch1 
+git merge branch1
+git push
+21. Спојте ја и гранката branch2 кон мастер.
+git push --set-upstream origin branch2 
+git merge branch1
+git push
+22. Додадете ја текстуалната датотека во која водевте документација до сега
+(потпишана со бројот на вашиот индекс) и направете commit со порака “Add
+docs”.
+git add 153071.txt 
+git commit -m "Add docs"
+23. Синхронизирајте ги сите гранки со оддалечениот репозиториум.
+git push 
+
+
+
