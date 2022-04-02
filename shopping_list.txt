@@ -1,5 +1,11 @@
 1.Bread x 1
 2.Flour x 13
 3.Milk x 3
+<<<<<<< HEAD
 4.Eggs x 4
 5.Juice x 11
+=======
+4.Oil x 4
+5.Juice x 5
+6.Sugar x 18
+>>>>>>> branch2
