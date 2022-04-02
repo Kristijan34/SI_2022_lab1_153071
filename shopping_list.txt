@@ -1,5 +1,5 @@
-1.Bread
-2.Flour
-3.Milk
-4.Eggs
-5.Juice
+1.Bread x 1
+2.Flour x 2
+3.Milk x 3
+4.Eggs x 4
+5.Juice x 5
